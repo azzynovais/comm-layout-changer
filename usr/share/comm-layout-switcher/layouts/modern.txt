@@ -2,8 +2,7 @@
 app-picker-layout=[{'BigApps': <{'position': <0>}>, 'AudioVideo': <{'position': <1>}>, 'Office': <{'position': <2>}>, 'Utilities': <{'position': <3>}>, 'Settings': <{'position': <4>}>, 'Network': <{'position': <5>}>, 'Game': <{'position': <6>}>, 'WebApps': <{'position': <7>}>, 'Development': <{'position': <8>}>, 'biglinux-grub-restore.desktop': <{'position': <9>}>, 'calamares-biglinux.desktop': <{'position': <10>}>}]
 command-history=['ajustes', 'r']
 disabled-extensions=['ddterm@amezin.github.com', 'just-perfection-desktop@just-perfection', 'GPaste@gnome-shell-extensions.gnome.org', 'dash-to-dock@micxgx.gmail.com']
-enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'CoverflowAltTab@dmo60.de', 'gsconnect@andyholmes.github.io', 'pamac-updates@manjaro.org', 'blur-my-shell@aunetx', 'legacyschemeautoswitcher@joshimukul29.gmail.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'pano@elhan.io', 'dash-to-panel@jderose9.github.com', 'arcmenu@arcmenu.com', 'compiz-alike-magic-lamp-effect@hermes83.github.com', 'desktop-cube@schneegans.github.com', 'compiz-windows-effect@hermes83.github.com']
-
+enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'CoverflowAltTab@dmo60.de', 'gsconnect@andyholmes.github.io', 'pamac-updates@manjaro.org', 'blur-my-shell@aunetx', 'legacyschemeautoswitcher@joshimukul29.gmail.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'pano@elhan.io', 'dash-to-panel@jderose9.github.com', 'arcmenu@arcmenu.com']
 
 [ca/desrt/dconf-editor]
 saved-pathbar-path='notif'
@@ -91,6 +90,7 @@ custom-background-color=true
 custom-theme-shrink=true
 customize-alphas=true
 dash-max-icon-size=39
+dock-fixed=true
 dock-position='BOTTOM'
 extend-height=false
 height-fraction=0.90000000000000002
@@ -132,6 +132,11 @@ panel-top-bottom-margins=4
 prefs-opened=false
 primary-monitor='STA-0x00000001'
 window-preview-title-position='TOP'
+
+[extensions/ding]
+check-x11wayland=true
+show-home=true
+show-trash=false
 
 [extensions/gsconnect]
 devices=@as []
@@ -212,10 +217,6 @@ window-maximize=true
 is-maximized=false
 window-height=640
 window-width=800
-
-[org/gnome/TextEditor]
-last-save-directory='file:///etc/nixos'
-show-line-numbers=true
 
 [org/gnome/Totem]
 active-plugins=['vimeo', 'variable-rate', 'skipto', 'screenshot', 'screensaver', 'save-file', 'rotation', 'recent', 'movie-properties', 'open-directory', 'mpris', 'autoload-subtitles', 'apple-trailers']
@@ -391,9 +392,6 @@ initial-size=(890, 664)
 initial-size-file-chooser=(890, 550)
 maximized=false
 
-[org/gnome/portal/filechooser/google-chrome]
-last-folder-path='/home/bruno'
-
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=false
 night-light-schedule-automatic=false
@@ -517,13 +515,6 @@ tray-padding=6
 tray-size=0
 window-preview-title-position='TOP'
 
-[org/gnome/shell/extensions/gsconnect]
-devices=['55ea379e_690d_4506_bd3a_c2e8cb9a35a2']
-discoverable=false
-enabled=true
-id='d350fad8-dd8a-4c10-be75-517d503c5123'
-name='nixos'
-
 [org/gnome/shell/extensions/gsconnect/device/4ab57715_2fd0_4d5e_9e21_10d517527b1a]
 incoming-capabilities=['kdeconnect.battery', 'kdeconnect.bigscreen.stt', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.contacts.request_all_uids_timestamps', 'kdeconnect.contacts.request_vcards_by_uid', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.action', 'kdeconnect.notification.reply', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.runcommand', 'kdeconnect.sftp.request', 'kdeconnect.share.request', 'kdeconnect.share.request.update', 'kdeconnect.sms.request', 'kdeconnect.sms.request_attachment', 'kdeconnect.sms.request_conversation', 'kdeconnect.sms.request_conversations', 'kdeconnect.systemvolume', 'kdeconnect.telephony.request', 'kdeconnect.telephony.request_mute']
 last-connection='lan://192.168.1.22:1716'
@@ -552,12 +543,6 @@ send-content=true
 [org/gnome/shell/extensions/gsconnect/device/55ea379e_690d_4506_bd3a_c2e8cb9a35a2/plugin/notification]
 applications='{"Impressoras":{"iconName":"org.gnome.Settings-printers-symbolic","enabled":true},"Eventos e lembretes de tarefas":{"iconName":"org.gnome.Evolution-alarm-notify","enabled":true},"Telegram":{"iconName":"telegram","enabled":true},"Discos":{"iconName":"org.gnome.DiskUtility","enabled":true},"Data & hora":{"iconName":"org.gnome.Settings-time-symbolic","enabled":true},"Analisador de uso de disco":{"iconName":"org.gnome.baobab","enabled":true},"Geary":{"iconName":"org.gnome.Geary","enabled":true},"Energia":{"iconName":"org.gnome.Settings-power-symbolic","enabled":true},"Console":{"iconName":"org.gnome.Console","enabled":true},"Cor":{"iconName":"org.gnome.Settings-color-symbolic","enabled":true},"Arquivos":{"iconName":"org.gnome.Nautilus","enabled":true},"Relógios":{"iconName":"org.gnome.clocks","enabled":true},"File Roller":{"iconName":"org.gnome.FileRoller","enabled":true}}'
 
-[org/gnome/shell/extensions/gsconnect/device/55ea379e_690d_4506_bd3a_c2e8cb9a35a2/plugin/share]
-receive-directory='/home/bruno/Downloads'
-
-[org/gnome/shell/extensions/gsconnect/device/55ea379e_690d_4506_bd3a_c2e8cb9a35a2/plugin/telephony]
-ringing-pause=true
-
 [org/gnome/shell/extensions/gsconnect/device/_0fc2106c_af4e_45ff_a279_dc2ff0de836f_]
 incoming-capabilities=['kdeconnect.battery', 'kdeconnect.bigscreen.stt', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.connectivity_report', 'kdeconnect.contacts.response_uids_timestamps', 'kdeconnect.contacts.response_vcards', 'kdeconnect.findmyphone.request', 'kdeconnect.lock', 'kdeconnect.lock.request', 'kdeconnect.mousepad.echo', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.presenter', 'kdeconnect.runcommand', 'kdeconnect.runcommand.request', 'kdeconnect.sftp', 'kdeconnect.share.request', 'kdeconnect.sms.attachment_file', 'kdeconnect.sms.messages', 'kdeconnect.systemvolume', 'kdeconnect.systemvolume.request', 'kdeconnect.telephony', 'kdeconnect.telephony.request_mute', 'kdeconnect.virtualmonitor', 'kdeconnect.virtualmonitor.request']
 last-connection='lan://192.168.1.29:1716'
@@ -565,12 +550,6 @@ name='cassia-aspirea51545'
 outgoing-capabilities=['kdeconnect.battery', 'kdeconnect.bigscreen.stt', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.contacts.request_all_uids_timestamps', 'kdeconnect.contacts.request_vcards_by_uid', 'kdeconnect.findmyphone.request', 'kdeconnect.lock', 'kdeconnect.lock.request', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.action', 'kdeconnect.notification.reply', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.runcommand', 'kdeconnect.runcommand.request', 'kdeconnect.sftp.request', 'kdeconnect.share.request', 'kdeconnect.share.request.update', 'kdeconnect.sms.request', 'kdeconnect.sms.request_attachment', 'kdeconnect.sms.request_conversation', 'kdeconnect.sms.request_conversations', 'kdeconnect.systemvolume', 'kdeconnect.systemvolume.request', 'kdeconnect.telephony', 'kdeconnect.telephony.request_mute', 'kdeconnect.virtualmonitor', 'kdeconnect.virtualmonitor.request']
 supported-plugins=['battery', 'clipboard', 'findmyphone', 'mousepad', 'mpris', 'notification', 'ping', 'runcommand', 'share', 'systemvolume', 'telephony']
 type='desktop'
-
-[org/gnome/shell/extensions/gsconnect/device/_48749b45_3713_4583_a59b_2031dcb2e504_]
-incoming-capabilities=['kdeconnect.battery', 'kdeconnect.bigscreen.stt', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.connectivity_report', 'kdeconnect.contacts.response_uids_timestamps', 'kdeconnect.contacts.response_vcards', 'kdeconnect.findmyphone.request', 'kdeconnect.lock', 'kdeconnect.lock.request', 'kdeconnect.mousepad.echo', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.presenter', 'kdeconnect.runcommand', 'kdeconnect.runcommand.request', 'kdeconnect.sftp', 'kdeconnect.share.request', 'kdeconnect.sms.attachment_file', 'kdeconnect.sms.messages', 'kdeconnect.systemvolume', 'kdeconnect.systemvolume.request', 'kdeconnect.telephony', 'kdeconnect.telephony.request_mute', 'kdeconnect.virtualmonitor', 'kdeconnect.virtualmonitor.request']
-last-connection='lan://192.168.1.26:1716'
-name='brunopc'
-outgoing-capabilities=['kdeconnect.battery', 'kdeconnect.bigscreen.stt', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.contacts.request_all_uids_timestamps', 'kdeconnect.contacts.request_vcards_by_uid', 'kdeconnect.findmyphone.request', 'kdeconnect.lock', 'kdeconnect.lock.request', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.action', 'kdeconnect.notification.reply', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.runcommand', 'kdeconnect.runcommand.request', 'kdeconnect.sftp.request', 'kdeconnect.share.request', 'kdeconnect.share.request.update', 'kdeconnect.sms.request', 'kdeconnect.sms.request_attachment', 'kdeconnect.sms.request_conversation', 'kdeconnect.sms.request_conversations', 'kdeconnect.systemvolume', 'kdeconnect.systemvolume.request', 'kdeconnect.telephony', 'kdeconnect.telephony.request_mute', 'kdeconnect.virtualmonitor', 'kdeconnect.virtualmonitor.request']
 supported-plugins=['battery', 'clipboard', 'findmyphone', 'mousepad', 'mpris', 'notification', 'ping', 'runcommand', 'share', 'systemvolume', 'telephony']
 type='desktop'
 
@@ -842,11 +821,6 @@ start-with-sidebar=true
 
 [org/x/editor/plugins]
 active-plugins=['time', 'textsize', 'spell', 'sort', 'open-uri-context-menu', 'modelines', 'joinlines', 'filebrowser', 'docinfo', 'bracketcompletion']
-
-[org/x/editor/plugins/filebrowser/on-load]
-root='file:///'
-tree-view=true
-virtual-root='file:///home/bruno'
 
 [org/x/editor/preferences/ui]
 statusbar-visible=true
